@@ -1,0 +1,34 @@
+#include <winver.h>
+#include "../version.h"
+
+//IDI_ICON1 ICON DISCARDABLE "hestia.ico"
+
+VS_VERSION_INFO    VERSIONINFO 
+FILEVERSION        VER_MAJOR,VER_MINOR,VER_REVISION,VER_BUILD
+PRODUCTVERSION     VER_MAJOR,VER_MINOR,VER_REVISION,VER_BUILD
+FILEFLAGSMASK      VS_FFI_FILEFLAGSMASK 
+FILEFLAGS          0x00000000L
+FILEOS             VOS__WINDOWS32
+FILETYPE           VFT_APP
+FILESUBTYPE        VFT2_UNKNOWN
+BEGIN
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0411, 1200
+    END
+
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904E4"
+        BEGIN
+            VALUE "CompanyName",      "nook"
+            VALUE "FileDescription",  "Hestia - Common Intermediate Script System"
+            VALUE "FileVersion",      VER_STRING
+            VALUE "InternalName",     "Hestia\0"
+            VALUE "LegalCopyright",   "Copyright (C) 2016 S2_SUMI.\0"
+            VALUE "OriginalFilename", "Hestia.exe\0"
+            VALUE "ProductName",      "Hestia\0"
+            VALUE "ProductVersion",   VER_STRING
+        END 
+    END
+END
