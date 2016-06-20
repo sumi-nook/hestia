@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Hestia</title><link href="/" rel="alternate"></link><link href="/feeds/hep.atom.xml" rel="self"></link><id>/</id><updated>2016-05-08T00:00:00+09:00</updated><entry><title>HEP Index</title><link href="/hep-index.html" rel="alternate"></link><updated>2016-05-08T00:00:00+09:00</updated><author><name>sumi-nook</name></author><id>tag:,2016-05-08:hep-index.html</id><summary type="html">&lt;h1&gt;目次&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;HEP No.&lt;/th&gt;
+&lt;th&gt;タイトル&lt;/th&gt;
+&lt;th&gt;概要&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="/hestia/hep1.html"&gt;HEP1&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Hestia改良提案の目的と指針&lt;/td&gt;
+&lt;td&gt;Hestia改良提案はHestiaの改良、またはその指針を示すための情報をまとめた文書です。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="/hestia/hep2.html"&gt;HEP2&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Hestiaにおけるライセンス&lt;/td&gt;
+&lt;td&gt;HestiaではGPLv3を用います。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="/hestia/hep3.html"&gt;HEP3&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;シナリオファイル&lt;/td&gt;
+&lt;td&gt;シナリオファイルはMarkdownの文法を基にして、基本的な表現を行います。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="/hestia/hep4.html"&gt;HEP4&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;スクリプト変換&lt;/td&gt;
+&lt;td&gt;シナリオファイルから抽出した構造データはXSLTを用いてスクリプトへ変換されます。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</summary></entry><entry><title>HEP1</title><link href="/hep1.html" rel="alternate"></link><updated>2016-05-07T00:00:00+09:00</updated><author><name>sumi-nook</name></author><id>tag:,2016-05-07:hep1.html</id><summary type="html">&lt;h1&gt;Hestia改良提案の目的と指針&lt;/h1&gt;
+&lt;h2&gt;HEPについて&lt;/h2&gt;
+&lt;p&gt;Hestia改良提案（HEP - Hestia Enhancement Proposal）はHestiaの改良、またはその指針を示すための情報をまとめた文書です。&lt;/p&gt;
+&lt;p&gt;HEPは&lt;a href="https://www.python.org/dev/peps/" title="Python Enhancement Proposal"&gt;PEP&lt;/a&gt;や&lt;a href="https://www.ietf.org/rfc.html" title="IETF - Request for Comments"&gt;RFC&lt;/a&gt;を参考にしています。&lt;/p&gt;
+&lt;h2&gt;HEPの種類&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;標準&lt;/strong&gt;はHestiaの機能を記述します。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;情報&lt;/strong&gt;は一般的な指針や、Hestiaの抱える問題等を記述します。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;文書番号&lt;/h2&gt;
+&lt;p&gt;文書番号は登録順序を問わず割り当てられ、必ず一意の文書となるように登録します。&lt;/p&gt;
+&lt;h3&gt;バージョン管理&lt;/h3&gt;
+&lt;p&gt;バージョン管理はGitを用い、修正の際は文書の番号を変更しないものとします。&lt;/p&gt;
+&lt;h2&gt;HEPの登録手順&lt;/h2&gt;
+&lt;p&gt;HEPに登録される文書は&lt;a href="http://creativecommons.org/licenses/by-sa/4.0/"&gt;CC BY-SA&lt;/a&gt;として扱われます。&lt;/p&gt;
+&lt;p&gt;編集者には提案を却下する権利があります。
+却下する場合は、その理由を提示する必要があります。&lt;/p&gt;
+&lt;p&gt;以下の編集者がHEPを管理します。&lt;/p&gt;
+&lt;h3&gt;編集者&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://twitter.com/S2_SUMI"&gt;@S2_SUMI&lt;/a&gt; &lt;a href="&amp;#109;&amp;#97;&amp;#105;&amp;#108;&amp;#116;&amp;#111;&amp;#58;&amp;#115;&amp;#117;&amp;#109;&amp;#105;&amp;#46;&amp;#110;&amp;#111;&amp;#111;&amp;#107;&amp;#64;&amp;#108;&amp;#105;&amp;#118;&amp;#101;&amp;#46;&amp;#106;&amp;#112;"&gt;&amp;#115;&amp;#117;&amp;#109;&amp;#105;&amp;#46;&amp;#110;&amp;#111;&amp;#111;&amp;#107;&amp;#64;&amp;#108;&amp;#105;&amp;#118;&amp;#101;&amp;#46;&amp;#106;&amp;#112;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;手順&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;提案者は提案したい文書をドラフトとして投稿します。&lt;ul&gt;
+&lt;li&gt;GitHub: &lt;code&gt;drafts&lt;/code&gt;フォルダに提案文書を入れ、プルリクエストを作成します。&lt;/li&gt;
+&lt;li&gt;E-mail: 提案文書を編集者に直接送ります。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;編集者は提案を&lt;code&gt;drafts&lt;/code&gt;に登録し、検討します。&lt;/li&gt;
+&lt;li&gt;登録される場合は文書に番号を割り当て、却下する場合はその理由を投稿します。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;参照&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Request for Comments [&lt;a href="https://www.ietf.org/rfc.html" title="IETF - Request for Comments"&gt;RFC&lt;/a&gt;]&lt;/li&gt;
+&lt;li&gt;Python Enhancement Proposal [&lt;a href="https://www.python.org/dev/peps/" title="Python Enhancement Proposal"&gt;PEP&lt;/a&gt;]&lt;/li&gt;
+&lt;/ul&gt;</summary></entry><entry><title>HEP2</title><link href="/hep2.html" rel="alternate"></link><updated>2016-05-07T00:00:00+09:00</updated><author><name>sumi-nook</name></author><id>tag:,2016-05-07:hep2.html</id><summary type="html">&lt;h1&gt;Hestiaにおけるライセンス&lt;/h1&gt;
+&lt;p&gt;Hestiaでは&lt;a href="http://www.gnu.org/licenses/gpl-3.0.txt"&gt;GPLv3&lt;/a&gt;を用います。&lt;/p&gt;
+&lt;p&gt;このライセンスはソフトウェアに適用され、生成物には適用されません。&lt;/p&gt;
+&lt;h2&gt;Hestiaを使用した生成物について&lt;/h2&gt;
+&lt;p&gt;&lt;a href="http://www.gnu.org/licenses/gpl-3.0.txt"&gt;GPLv3&lt;/a&gt;はコピーレフトライセンスですが、生成物に関してはGPLライセンスは適用されません。&lt;/p&gt;
+&lt;p&gt;つまり、Hestiaを用いて作成されたファイルやスクリプトがGPLライセンスになることはありません。&lt;/p&gt;
+&lt;p&gt;これはGCCコンパイラでコンパイルされたプログラムがGPL適用されないことと同じです。&lt;/p&gt;
+&lt;h2&gt;XSLT内のスクリプト等のライセンス&lt;/h2&gt;
+&lt;p&gt;テンプレート部分は&lt;a href="https://opensource.org/licenses/BSD-3-Clause"&gt;修正BSDライセンス&lt;/a&gt;が適用されます。&lt;/p&gt;
+&lt;h2&gt;参照&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.gnu.org/licenses/gpl-3.0.txt"&gt;GPLv3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://opensource.org/licenses/BSD-3-Clause"&gt;修正BSDライセンス&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</summary></entry><entry><title>HEP3</title><link href="/hep3.html" rel="alternate"></link><updated>2016-05-07T00:00:00+09:00</updated><author><name>sumi-nook</name></author><id>tag:,2016-05-07:hep3.html</id><summary type="html">&lt;h1&gt;シナリオファイル&lt;/h1&gt;
+&lt;p&gt;シナリオファイルはMarkdownの文法を基にして、基本的な表現を行います。&lt;/p&gt;
+&lt;p&gt;シナリオファイルは内部でXHTML形式に変換され、構造データを構築します。&lt;/p&gt;
+&lt;h2&gt;エンコーディング&lt;/h2&gt;
+&lt;p&gt;シナリオファイルのテキストエンコーディングは&lt;a href="https://tools.ietf.org/html/rfc3629" title="RFC3629 - UTF-8, a transformation format of ISO 10646"&gt;UTF-8&lt;/a&gt;を使用しなければなりません。&lt;/p&gt;
+&lt;h2&gt;Markdown&lt;/h2&gt;
+&lt;p&gt;MarkdownはJohn Gruber氏によって提案された書式です。 [&lt;a href="http://daringfireball.net/projects/markdown/"&gt;Markdown&lt;/a&gt;]&lt;/p&gt;
+&lt;h3&gt;用いる表現&lt;/h3&gt;
+&lt;h4&gt;段落&lt;/h4&gt;
+&lt;p&gt;Markdown:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;行と行の間には空行が必要になります。
+
+空行を挟まない行は
+改行命令を挟んで一つのパラグラフにまとめられます。
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;XHTML:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;div&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;p&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;行と行の間には空行が必要になります。&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;p&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;空行を挟まない行は&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&amp;lt;br&lt;/span&gt; &lt;span class="nt"&gt;/&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;改行命令を挟んで一つのパラグラフにまとめられます。&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;Markdown Hestia拡張&lt;/h2&gt;
+&lt;p&gt;ただのMarkdownではシナリオ表現に必要な表現が不足しています。&lt;/p&gt;
+&lt;p&gt;そのため、MarkdownにHestia拡張を施します。&lt;/p&gt;
+&lt;h3&gt;台詞表現&lt;/h3&gt;
+&lt;p&gt;ADV形式のノベルゲーム等では名前が独立した表現となっています。&lt;/p&gt;
+&lt;p&gt;Markdown:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;【名前】「セリフ」
+
+台詞表現以外は地の文。
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;XHTML:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;div&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;p&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;speech&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;name&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;名前&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;「セリフ」&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;p&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;description&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;台詞表現以外は地の文。&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;ルビ表現&lt;/h3&gt;
+&lt;p&gt;いくつかのノベルエンジンではルビ機能が実装されています。&lt;/p&gt;
+&lt;p&gt;Markdown:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;これは[Ruby](ruby:ルビ)表現
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;XHTML:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;div&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;p&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;description&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;これは&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&amp;lt;ruby&amp;gt;&amp;lt;rb&amp;gt;&lt;/span&gt;Ruby&lt;span class="nt"&gt;&amp;lt;/rb&amp;gt;&amp;lt;rp&amp;gt;&lt;/span&gt;(&lt;span class="nt"&gt;&amp;lt;/rp&amp;gt;&amp;lt;rt&amp;gt;&lt;/span&gt;ルビ&lt;span class="nt"&gt;&amp;lt;/rt&amp;gt;&amp;lt;rp&amp;gt;&lt;/span&gt;)&lt;span class="nt"&gt;&amp;lt;/rp&amp;gt;&amp;lt;/ruby&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;表現&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;木構造化&lt;/h3&gt;
+&lt;p&gt;前述のXHTML表現でも既に登場していましたが、テキストを処理しやすい木構造XMLにします。&lt;/p&gt;
+&lt;p&gt;Markdown:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;テキストを完全な**木構造**化します。
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;XHTML:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;div&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;p&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;description&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;テキストを完全な&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&amp;lt;strong&amp;gt;&lt;/span&gt;木構造&lt;span class="nt"&gt;&amp;lt;/strong&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;化します。&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;</summary></entry><entry><title>HEP4</title><link href="/hep4.html" rel="alternate"></link><updated>2016-05-07T00:00:00+09:00</updated><author><name>sumi-nook</name></author><id>tag:,2016-05-07:hep4.html</id><summary type="html">&lt;h1&gt;スクリプト変換&lt;/h1&gt;
+&lt;p&gt;シナリオファイルから抽出した構造データはXSLTを用いてスクリプトへ変換されます。&lt;/p&gt;
+&lt;h2&gt;XSLT変換&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://www.w3.org/TR/xslt20/"&gt;XSLT&lt;/a&gt;はXMLを変換するための関数型言語で、XMLに適用することでテキストファイルを生成します。&lt;/p&gt;
+&lt;p&gt;XHTML:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;div&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;p&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;description&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;こんにちは。&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;p&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;description&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;ごきげんよろしゅう。&lt;span class="nt"&gt;&amp;lt;/span&amp;gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;XSLT:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="cp"&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;xsl:stylesheet&lt;/span&gt; &lt;span class="na"&gt;version=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;1.0&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;xmlns:xsl=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;http://www.w3.org/1999/XSL/Transform&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;xsl:output&lt;/span&gt; &lt;span class="na"&gt;method=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;encoding=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;UTF-8&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;&amp;lt;xsl:template&lt;/span&gt; &lt;span class="na"&gt;match=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;/div&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;xsl:text&amp;gt;&lt;/span&gt;[wait time=200]
+*start|スタート
+[cm]
+&lt;span class="nt"&gt;&amp;lt;/xsl:text&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;xsl:apply-templates/&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/xsl:template&amp;gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;&amp;lt;xsl:template&lt;/span&gt; &lt;span class="na"&gt;match=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;p[contains(@class, &amp;#39;description&amp;#39;)]&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;xsl:apply-templates/&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;xsl:text&amp;gt;&lt;/span&gt;[l][r]&lt;span class="nt"&gt;&amp;lt;/xsl:text&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/xsl:template&amp;gt;&lt;/span&gt;
+
+&lt;span class="nt"&gt;&amp;lt;xsl:template&lt;/span&gt; &lt;span class="na"&gt;match=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;span[contains(@class, &amp;#39;text&amp;#39;)]&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;xsl:value-of&lt;/span&gt; &lt;span class="na"&gt;select=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;text()&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/xsl:template&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/xsl:stylesheet&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;KAG3 Script:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;[wait time=200]
+*start|スタート
+[cm]
+
+こんにちは。[l][r]
+ごきげんよろしゅう。[l][r]
+&lt;/pre&gt;&lt;/div&gt;</summary></entry></feed>
