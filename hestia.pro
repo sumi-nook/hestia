@@ -72,6 +72,7 @@ FORMS += \
     filenameeditdialog.ui \
     glwindow.ui
 
+TRANSLATIONS += i18n/hestia_ja.ts
 
 # 3rd-party sources
 INCLUDEPATH += $$PWD/3rdparty/QMarkdown-cd865b41ef6038d32d109bdb0eae830ed1eb14a3/include

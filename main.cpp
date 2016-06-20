@@ -1,11 +1,31 @@
 #include "mainwindow.h"
 #include <QApplication>
+#include <QTranslator>
 
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
-    MainWindow w;
-    w.show();
+    QApplication app(argc, argv);
 
-    return a.exec();
+    QTranslator qtTr, appTr;
+    QStringList trDirs = {"i18n", "."};
+
+    // Qt Translations
+    for ( const QString &dir : trDirs ) {
+        if ( qtTr.load("qt_" + QLocale::system().name(), dir) ) {
+            app.installTranslator(&qtTr);
+            break;
+        }
+    }
+    // App Translations
+    for ( const QString &dir : trDirs ) {
+        if ( appTr.load("hestia_" + QLocale::system().name(), dir) ) {
+            app.installTranslator(&appTr);
+            break;
+        }
+    }
+
+    MainWindow win;
+    win.show();
+
+    return app.exec();
 }
