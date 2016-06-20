@@ -47,7 +47,7 @@ void ScenarioHighlighter::applySpeechStyle(const QString &text, const QRegExp &r
 
 void ScenarioHighlighter::applyCommentStyle(const QString &, const QRegExp &reg)
 {
-    this->setFormat(0, reg.cap(1).size(), QColor("#228b22"));
+    this->setFormat(0, reg.cap(0).size(), QColor("#228b22"));
     this->setCurrentBlockState(STATE_COMMENT);
 }
 
