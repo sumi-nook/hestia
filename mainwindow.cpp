@@ -205,14 +205,13 @@ void MainWindow::previewWindow_ready()
 
     if ( ! QFileInfo(defaultFontPath).exists() ) {
         QMessageBox::critical(this, tr("Font not found"), tr("Font \"%1\" cannot open.").arg(defaultFontPath));
-        this->close();
+    } else {
+        std::shared_ptr<FTFont> font(new FTPixmapFont(defaultFontPath.toLocal8Bit().constData()));
+        if ( ! font->FaceSize(30) ) {
+            qDebug() << "FaceSize error,";
+        }
+        this->glWindow->context()->fontRegistry->installFont(QString(), font);
     }
-
-    std::shared_ptr<FTFont> font(new FTPixmapFont(defaultFontPath.toLocal8Bit().constData()));
-    if ( ! font->FaceSize(30) ) {
-        qDebug() << "FaceSize error,";
-    }
-    this->glWindow->context()->fontRegistry->installFont(QString(), font);
 
     // init double buffer
     this->doubleBufferObject = DoubleBufferObject::Ptr(new DoubleBufferObject);
@@ -395,6 +394,9 @@ void MainWindow::lineSelection_currentRowChanged(const QModelIndex &current, con
         Point2D point(100, 200);
         glRasterPos2d(point.x, point.y);
         std::shared_ptr<FTFont> font = ctx->fontRegistry->font();
+        if ( ! font ) {
+            return;
+        }
         QString tmp;
         int line = 0;
         for ( const QChar &ch : text ) {
