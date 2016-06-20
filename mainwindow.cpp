@@ -280,7 +280,7 @@ void MainWindow::scenarioSelection_currentRowChanged(const QModelIndex &current,
     }
     TreeItem *currentItem = static_cast<TreeItem *>(current.internalPointer());
     TreeItem *previousItem = static_cast<TreeItem *>(previous.internalPointer());
-    if ( ! currentItem || ! previousItem || currentItem == previousItem ) {
+    if ( ! currentItem || currentItem == previousItem ) {
         return;
     }
 
@@ -309,7 +309,7 @@ void MainWindow::structureSelection_currentRowChanged(const QModelIndex &current
     }
     TreeItem *currentItem = static_cast<TreeItem *>(current.internalPointer());
     TreeItem *previousItem = static_cast<TreeItem *>(previous.internalPointer());
-    if ( ! currentItem || ! previousItem || currentItem == previousItem ) {
+    if ( ! currentItem || currentItem == previousItem ) {
         return;
     }
 
