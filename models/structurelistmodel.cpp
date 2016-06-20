@@ -197,6 +197,9 @@ QModelIndex StructureListModel::index(int row, int column, const QModelIndex &pa
     if ( parent.isValid() ) {
         return QModelIndex();
     }
+    if ( row < 0 || row >= this->root.size() ) {
+        return QModelIndex();
+    }
     return this->createIndex(row, column);
 }
 
