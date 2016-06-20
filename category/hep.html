@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="">	
+<head>
+	<meta charset="utf-8"/>
+	<title>HEP - Hestia</title>	
+	<meta name="author" content="sumi-nook">
+	
+
+	<link rel="stylesheet" href="https://sumi-nook.github.io/hestia/theme/css/main.css" type="text/css" />
+		
+
+
+</head>
+	
+<body>
+
+    <div class="container">
+	  
+	  <header role="banner">
+	    <div class="feeds">
+	    </div>
+		<a href="https://sumi-nook.github.io/hestia" class="title">Hestia</a>
+      </header>
+	
+	  <div class="wrapper">
+
+		  <div role="main" class="content">
+
+<h1>Posts categorized under: HEP</h1>
+
+<article class="summary">
+<div class="metadata">
+  <time datetime="2016-05-08T00:00:00" pubdate>2016-05-08</time>
+    <address class="vcard author">
+      by <a class="url fn" href="https://sumi-nook.github.io/hestia/author/sumi-nook.html">sumi-nook</a>
+    </address>
+  in <a href="https://sumi-nook.github.io/hestia/category/hep.html">HEP</a>
+</div>  <div>
+    <h2>
+      <a href="https://sumi-nook.github.io/hestia/hep-index.html" rel="bookmark" title="Permalink to HEP Index">HEP Index</a>
+    </h2>
+    <p><h1>目次</h1>
+<table>
+<thead>
+<tr>
+<th>HEP No.</th>
+<th>タイトル</th>
+<th>概要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="/hestia/hep1.html">HEP1</a></td>
+<td>Hestia改良提案の目的と指針</td>
+<td>Hestia改良提案はHestiaの改良、またはその指針を示すための情報をまとめた文書です。</td>
+</tr>
+<tr>
+<td><a href="/hestia/hep2.html">HEP2</a></td>
+<td>Hestiaにおけるライセンス</td>
+<td>HestiaではGPLv3を用います。</td>
+</tr>
+<tr>
+<td><a href="/hestia/hep3.html">HEP3</a></td>
+<td>シナリオファイル</td>
+<td>シナリオファイルはMarkdownの文法を基にして、基本的な表現を行います。</td>
+</tr>
+<tr>
+<td><a href="/hestia/hep4.html">HEP4</a></td>
+<td>スクリプト変換</td>
+<td>シナリオファイルから抽出した構造データはXSLTを用いてスクリプトへ変換されます。</td>
+</tr>
+</tbody>
+</table></p>
+  </div>
+</article><article class="summary">
+<div class="metadata">
+  <time datetime="2016-05-07T00:00:00" pubdate>2016-05-07</time>
+    <address class="vcard author">
+      by <a class="url fn" href="https://sumi-nook.github.io/hestia/author/sumi-nook.html">sumi-nook</a>
+    </address>
+  in <a href="https://sumi-nook.github.io/hestia/category/hep.html">HEP</a>
+</div>  <div>
+    <h2>
+      <a href="https://sumi-nook.github.io/hestia/hep1.html" rel="bookmark" title="Permalink to HEP1">HEP1</a>
+    </h2>
+    <p><h1>Hestia改良提案の目的と指針</h1>
+<h2>HEPについて</h2>
+<p>Hestia改良提案（HEP - Hestia Enhancement Proposal）はHestiaの改良、またはその指針を示すための情報をまとめた文書です。</p>
+<p>HEPは<a href="https://www.python.org/dev/peps/" title="Python Enhancement Proposal">PEP</a>や<a href="https://www.ietf.org/rfc.html" title="IETF - Request for Comments">RFC</a>を参考にしています。</p>
+<h2>HEPの種類</h2>
+<ol>
+<li><strong>標準</strong>はHestiaの機能を記述します。</li>
+<li><strong>情報</strong>は一般的な指針や、Hestiaの抱える問題等を記述します。</li>
+</ol>
+<h2>文書番号</h2>
+<p>文書番号は登録順序を問わず割り当てられ、必ず一意の文書となるように登録します。</p>
+<h3>バージョン管理</h3>
+<p>バージョン管理はGitを用い、修正の際は文書の番号を変更しないものとします。</p>
+<h2>HEPの登録手順</h2>
+<p>HEPに登録される文書は<a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA</a>として扱われます。</p>
+<p>編集者には提案を却下する権利があります。
+却下する場合は、その理由を提示する必要があります。</p>
+<p>以下の編集者がHEPを管理します。</p>
+<h3>編集者</h3>
+<ul>
+<li><a href="https://twitter.com/S2_SUMI">@S2_SUMI</a> <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#109;&#105;&#46;&#110;&#111;&#111;&#107;&#64;&#108;&#105;&#118;&#101;&#46;&#106;&#112;">&#115;&#117;&#109;&#105;&#46;&#110;&#111;&#111;&#107;&#64;&#108;&#105;&#118;&#101;&#46;&#106;&#112;</a></li>
+</ul>
+<h3>手順</h3>
+<ol>
+<li>提案者は提案したい文書をドラフトとして投稿します。<ul>
+<li>GitHub: <code>drafts</code>フォルダに提案文書を入れ、プルリクエストを作成します。</li>
+<li>E-mail: 提案文書を編集者に直接送ります。</li>
+</ul>
+</li>
+<li>編集者は提案を<code>drafts</code>に登録し、検討します。</li>
+<li>登録される場合は文書に番号を割り当て ...</li></ol></p>
+  </div>
+</article><article class="summary">
+<div class="metadata">
+  <time datetime="2016-05-07T00:00:00" pubdate>2016-05-07</time>
+    <address class="vcard author">
+      by <a class="url fn" href="https://sumi-nook.github.io/hestia/author/sumi-nook.html">sumi-nook</a>
+    </address>
+  in <a href="https://sumi-nook.github.io/hestia/category/hep.html">HEP</a>
+</div>  <div>
+    <h2>
+      <a href="https://sumi-nook.github.io/hestia/hep2.html" rel="bookmark" title="Permalink to HEP2">HEP2</a>
+    </h2>
+    <p><h1>Hestiaにおけるライセンス</h1>
+<p>Hestiaでは<a href="http://www.gnu.org/licenses/gpl-3.0.txt">GPLv3</a>を用います。</p>
+<p>このライセンスはソフトウェアに適用され、生成物には適用されません。</p>
+<h2>Hestiaを使用した生成物について</h2>
+<p><a href="http://www.gnu.org/licenses/gpl-3.0.txt">GPLv3</a>はコピーレフトライセンスですが、生成物に関してはGPLライセンスは適用されません。</p>
+<p>つまり、Hestiaを用いて作成されたファイルやスクリプトがGPLライセンスになることはありません。</p>
+<p>これはGCCコンパイラでコンパイルされたプログラムがGPL適用されないことと同じです。</p>
+<h2>XSLT内のスクリプト等のライセンス</h2>
+<p>テンプレート部分は<a href="https://opensource.org/licenses/BSD-3-Clause">修正BSDライセンス</a>が適用されます。</p>
+<h2>参照</h2>
+<ul>
+<li><a href="http://www.gnu.org/licenses/gpl-3.0.txt">GPLv3</a></li>
+<li><a href="https://opensource.org/licenses/BSD-3-Clause">修正BSDライセンス</a></li>
+</ul></p>
+  </div>
+</article><article class="summary">
+<div class="metadata">
+  <time datetime="2016-05-07T00:00:00" pubdate>2016-05-07</time>
+    <address class="vcard author">
+      by <a class="url fn" href="https://sumi-nook.github.io/hestia/author/sumi-nook.html">sumi-nook</a>
+    </address>
+  in <a href="https://sumi-nook.github.io/hestia/category/hep.html">HEP</a>
+</div>  <div>
+    <h2>
+      <a href="https://sumi-nook.github.io/hestia/hep3.html" rel="bookmark" title="Permalink to HEP3">HEP3</a>
+    </h2>
+    <p><h1>シナリオファイル</h1>
+<p>シナリオファイルはMarkdownの文法を基にして、基本的な表現を行います。</p>
+<p>シナリオファイルは内部でXHTML形式に変換され、構造データを構築します。</p>
+<h2>エンコーディング</h2>
+<p>シナリオファイルのテキストエンコーディングは<a href="https://tools.ietf.org/html/rfc3629" title="RFC3629 - UTF-8, a transformation format of ISO 10646">UTF-8</a>を使用しなければなりません。</p>
+<h2>Markdown</h2>
+<p>MarkdownはJohn Gruber氏によって提案された書式です。 [<a href="http://daringfireball.net/projects/markdown/">Markdown</a>]</p>
+<h3>用いる表現</h3>
+<h4>段落</h4>
+<p>Markdown:</p>
+<div class="highlight"><pre>行と行の間には空行が必要になります。
+
+空行を挟まない行は
+改行命令を挟んで一つのパラグラフにまとめられます。
+</pre></div>
+
+
+<p>XHTML:</p>
+<div class="highlight"><pre><span class="nt">&lt;div&gt;</span>
+<span class="nt">&lt;p&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>行と行の間には空行が必要になります。<span class="nt">&lt;/span&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>空行を挟まない行は<span class="nt">&lt;/span&gt;&lt;br</span> <span class="nt">/&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>改行命令を挟んで一つのパラグラフにまとめられます。<span class="nt">&lt;/span&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+
+
+<h2>Markdown Hestia拡張</h2>
+<p>ただのMarkdownではシナリオ表現に必要な表現が不足しています。</p>
+<p>そのため、MarkdownにHestia拡張を施します。</p>
+<h3>台詞表現</h3>
+<p>ADV形式のノベルゲーム等では名前が独立した表現となっています。</p>
+<p>Markdown ...</p></p>
+  </div>
+</article><article class="summary">
+<div class="metadata">
+  <time datetime="2016-05-07T00:00:00" pubdate>2016-05-07</time>
+    <address class="vcard author">
+      by <a class="url fn" href="https://sumi-nook.github.io/hestia/author/sumi-nook.html">sumi-nook</a>
+    </address>
+  in <a href="https://sumi-nook.github.io/hestia/category/hep.html">HEP</a>
+</div>  <div>
+    <h2>
+      <a href="https://sumi-nook.github.io/hestia/hep4.html" rel="bookmark" title="Permalink to HEP4">HEP4</a>
+    </h2>
+    <p><h1>スクリプト変換</h1>
+<p>シナリオファイルから抽出した構造データはXSLTを用いてスクリプトへ変換されます。</p>
+<h2>XSLT変換</h2>
+<p><a href="https://www.w3.org/TR/xslt20/">XSLT</a>はXMLを変換するための関数型言語で、XMLに適用することでテキストファイルを生成します。</p>
+<p>XHTML:</p>
+<div class="highlight"><pre><span class="nt">&lt;div&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;description&quot;</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>こんにちは。<span class="nt">&lt;/span&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;description&quot;</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>ごきげんよろしゅう。<span class="nt">&lt;/span&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+
+
+<p>XSLT:</p>
+<div class="highlight"><pre><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<span class="nt">&lt;xsl:stylesheet</span> <span class="na">version=</span><span class="s">&quot;1.0&quot;</span> <span class="na">xmlns:xsl=</span><span class="s">&quot;http://www.w3.org/1999/XSL/Transform&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;xsl:output ...</span></pre></div></p>
+  </div>
+</article>
+
+		  </div>	
+		  
+		  <div class="sidebar">
+		    <div class="sidebar-container" >
+
+
+  	          <nav>
+	            <h2>Categories</h2>
+	            <ul>
+	                <li class="active"><a href="https://sumi-nook.github.io/hestia/category/hep.html">HEP</a></li>
+	                <li ><a href="https://sumi-nook.github.io/hestia/category/index.html">Index</a></li>
+	            </ul>
+	          </nav>
+
+
+	        </div>
+		  </div>
+
+	  </div>
+
+      <footer>
+		<p role="contentinfo">
+		  sumi-nook - Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a>. Theme <a href="https://github.com/fle/pelican-sober">pelican-sober</a>.
+    	</p>
+
+	  </footer>	
+
+	</div>
+
+	<a href="https://github.com/sumi-nook/hestia"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+	
+	  <script>
+		var _gaq=[['_setAccount','UA-77451117-2'],['_trackPageview']];
+		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g,s)}(document,'script'));
+	  </script>
+
+</body>
+</html>

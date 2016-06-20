@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="">	
+<head>
+	<meta charset="utf-8"/>
+	<title>HEP4 - Hestia</title>	
+	<meta name="author" content="sumi-nook">
+	
+
+  <meta name="description" content="スクリプト変換 シナリオファイルから抽出した構造データはXSLTを用いてスクリプトへ変換されます。 XSLT変換 XSLTはXMLを変換するための関数型言語で、XMLに適用することでテキストファイルを生成します。 XHTML: &lt;div&gt; &lt;p class=&#34;description&#34;&gt;&lt;span class=&#34;text&#34;&gt;こんにちは。&lt;/span&gt;&lt;/p&gt; &lt;p class=&#34;description&#34;&gt;&lt;span class=&#34;text&#34;&gt;ごきげんよろしゅう。&lt;/span&gt;&lt;/p&gt; &lt;/div&gt; XSLT: &lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt; &lt;xsl:stylesheet version=&#34;1.0&#34; xmlns:xsl=&#34;http://www.w3.org/1999/XSL/Transform&#34;&gt; &lt;xsl:output ...">
+
+
+
+	<link rel="stylesheet" href="https://sumi-nook.github.io/hestia/theme/css/main.css" type="text/css" />
+		
+
+
+</head>
+	
+<body>
+
+    <div class="container">
+	  
+	  <header role="banner">
+	    <div class="feeds">
+	    </div>
+		<a href="https://sumi-nook.github.io/hestia" class="title">Hestia</a>
+      </header>
+	
+	  <div class="wrapper">
+
+		  <div role="main" class="content">
+	<article class="full">
+		
+		<h1>HEP4</h1>
+		
+<div class="metadata">
+  <time datetime="2016-05-07T00:00:00" pubdate>2016-05-07</time>
+    <address class="vcard author">
+      by <a class="url fn" href="https://sumi-nook.github.io/hestia/author/sumi-nook.html">sumi-nook</a>
+    </address>
+  in <a href="https://sumi-nook.github.io/hestia/category/hep.html">HEP</a>
+</div>		
+		<h1>スクリプト変換</h1>
+<p>シナリオファイルから抽出した構造データはXSLTを用いてスクリプトへ変換されます。</p>
+<h2>XSLT変換</h2>
+<p><a href="https://www.w3.org/TR/xslt20/">XSLT</a>はXMLを変換するための関数型言語で、XMLに適用することでテキストファイルを生成します。</p>
+<p>XHTML:</p>
+<div class="highlight"><pre><span class="nt">&lt;div&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;description&quot;</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>こんにちは。<span class="nt">&lt;/span&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;description&quot;</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>ごきげんよろしゅう。<span class="nt">&lt;/span&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+
+
+<p>XSLT:</p>
+<div class="highlight"><pre><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span>
+<span class="nt">&lt;xsl:stylesheet</span> <span class="na">version=</span><span class="s">&quot;1.0&quot;</span> <span class="na">xmlns:xsl=</span><span class="s">&quot;http://www.w3.org/1999/XSL/Transform&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;xsl:output</span> <span class="na">method=</span><span class="s">&quot;text&quot;</span> <span class="na">encoding=</span><span class="s">&quot;UTF-8&quot;</span><span class="nt">/&gt;</span>
+
+<span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">&quot;/div&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;xsl:text&gt;</span>[wait time=200]
+*start|スタート
+[cm]
+<span class="nt">&lt;/xsl:text&gt;</span>
+<span class="nt">&lt;xsl:apply-templates/&gt;</span>
+<span class="nt">&lt;/xsl:template&gt;</span>
+
+<span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">&quot;p[contains(@class, &#39;description&#39;)]&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;xsl:apply-templates/&gt;</span>
+<span class="nt">&lt;xsl:text&gt;</span>[l][r]<span class="nt">&lt;/xsl:text&gt;</span>
+<span class="nt">&lt;/xsl:template&gt;</span>
+
+<span class="nt">&lt;xsl:template</span> <span class="na">match=</span><span class="s">&quot;span[contains(@class, &#39;text&#39;)]&quot;</span><span class="nt">&gt;</span>
+<span class="nt">&lt;xsl:value-of</span> <span class="na">select=</span><span class="s">&quot;text()&quot;</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/xsl:template&gt;</span>
+<span class="nt">&lt;/xsl:stylesheet&gt;</span>
+</pre></div>
+
+
+<p>KAG3 Script:</p>
+<div class="highlight"><pre>[wait time=200]
+*start|スタート
+[cm]
+
+こんにちは。[l][r]
+ごきげんよろしゅう。[l][r]
+</pre></div>	
+
+	</article>
+
+    <p>
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="" data-lang="en" data-size="small" data-related="">Tweet</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	</p>
+
+
+		  </div>	
+		  
+		  <div class="sidebar">
+		    <div class="sidebar-container" >
+
+
+  	          <nav>
+	            <h2>Categories</h2>
+	            <ul>
+	                <li class="active"><a href="https://sumi-nook.github.io/hestia/category/hep.html">HEP</a></li>
+	                <li ><a href="https://sumi-nook.github.io/hestia/category/index.html">Index</a></li>
+	            </ul>
+	          </nav>
+
+
+	        </div>
+		  </div>
+
+	  </div>
+
+      <footer>
+		<p role="contentinfo">
+		  sumi-nook - Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a>. Theme <a href="https://github.com/fle/pelican-sober">pelican-sober</a>.
+    	</p>
+
+	  </footer>	
+
+	</div>
+
+	<a href="https://github.com/sumi-nook/hestia"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+	
+	  <script>
+		var _gaq=[['_setAccount','UA-77451117-2'],['_trackPageview']];
+		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g,s)}(document,'script'));
+	  </script>
+
+</body>
+</html>

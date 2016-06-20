@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="">	
+<head>
+	<meta charset="utf-8"/>
+	<title>HEP3 - Hestia</title>	
+	<meta name="author" content="sumi-nook">
+	
+
+  <meta name="description" content="シナリオファイル シナリオファイルはMarkdownの文法を基にして、基本的な表現を行います。 シナリオファイルは内部でXHTML形式に変換され、構造データを構築します。 エンコーディング シナリオファイルのテキストエンコーディングはUTF-8を使用しなければなりません。 Markdown MarkdownはJohn Gruber氏によって提案された書式です。 [Markdown] 用いる表現 段落 Markdown: 行と行の間には空行が必要になります。 空行を挟まない行は 改行命令を挟んで一つのパラグラフにまとめられます。 XHTML: &lt;div&gt; &lt;p&gt;&lt;span class=&#34;text&#34;&gt;行と行の間には空行が必要になります。&lt;/span&gt;&lt;/p&gt; &lt;p&gt;&lt;span class=&#34;text&#34;&gt;空行を挟まない行は&lt;/span&gt;&lt;br /&gt;&lt;span class=&#34;text&#34;&gt;改行命令を挟んで一つのパラグラフにまとめられます。&lt;/span&gt;&lt;/p&gt; &lt;/div&gt; Markdown Hestia拡張 ただのMarkdownではシナリオ表現に必要な表現が不足しています。 そのため、MarkdownにHestia拡張を施します。 台詞表現 ADV形式のノベルゲーム等では名前が独立した表現となっています。 Markdown ...">
+
+
+
+	<link rel="stylesheet" href="https://sumi-nook.github.io/hestia/theme/css/main.css" type="text/css" />
+		
+
+
+</head>
+	
+<body>
+
+    <div class="container">
+	  
+	  <header role="banner">
+	    <div class="feeds">
+	    </div>
+		<a href="https://sumi-nook.github.io/hestia" class="title">Hestia</a>
+      </header>
+	
+	  <div class="wrapper">
+
+		  <div role="main" class="content">
+	<article class="full">
+		
+		<h1>HEP3</h1>
+		
+<div class="metadata">
+  <time datetime="2016-05-07T00:00:00" pubdate>2016-05-07</time>
+    <address class="vcard author">
+      by <a class="url fn" href="https://sumi-nook.github.io/hestia/author/sumi-nook.html">sumi-nook</a>
+    </address>
+  in <a href="https://sumi-nook.github.io/hestia/category/hep.html">HEP</a>
+</div>		
+		<h1>シナリオファイル</h1>
+<p>シナリオファイルはMarkdownの文法を基にして、基本的な表現を行います。</p>
+<p>シナリオファイルは内部でXHTML形式に変換され、構造データを構築します。</p>
+<h2>エンコーディング</h2>
+<p>シナリオファイルのテキストエンコーディングは<a href="https://tools.ietf.org/html/rfc3629" title="RFC3629 - UTF-8, a transformation format of ISO 10646">UTF-8</a>を使用しなければなりません。</p>
+<h2>Markdown</h2>
+<p>MarkdownはJohn Gruber氏によって提案された書式です。 [<a href="http://daringfireball.net/projects/markdown/">Markdown</a>]</p>
+<h3>用いる表現</h3>
+<h4>段落</h4>
+<p>Markdown:</p>
+<div class="highlight"><pre>行と行の間には空行が必要になります。
+
+空行を挟まない行は
+改行命令を挟んで一つのパラグラフにまとめられます。
+</pre></div>
+
+
+<p>XHTML:</p>
+<div class="highlight"><pre><span class="nt">&lt;div&gt;</span>
+<span class="nt">&lt;p&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>行と行の間には空行が必要になります。<span class="nt">&lt;/span&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>空行を挟まない行は<span class="nt">&lt;/span&gt;&lt;br</span> <span class="nt">/&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>改行命令を挟んで一つのパラグラフにまとめられます。<span class="nt">&lt;/span&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+
+
+<h2>Markdown Hestia拡張</h2>
+<p>ただのMarkdownではシナリオ表現に必要な表現が不足しています。</p>
+<p>そのため、MarkdownにHestia拡張を施します。</p>
+<h3>台詞表現</h3>
+<p>ADV形式のノベルゲーム等では名前が独立した表現となっています。</p>
+<p>Markdown:</p>
+<div class="highlight"><pre>【名前】「セリフ」
+
+台詞表現以外は地の文。
+</pre></div>
+
+
+<p>XHTML:</p>
+<div class="highlight"><pre><span class="nt">&lt;div&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;speech&quot;</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;name&quot;</span><span class="nt">&gt;</span>名前<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>「セリフ」<span class="nt">&lt;/span&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;description&quot;</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>台詞表現以外は地の文。<span class="nt">&lt;/span&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+
+
+<h3>ルビ表現</h3>
+<p>いくつかのノベルエンジンではルビ機能が実装されています。</p>
+<p>Markdown:</p>
+<div class="highlight"><pre>これは[Ruby](ruby:ルビ)表現
+</pre></div>
+
+
+<p>XHTML:</p>
+<div class="highlight"><pre><span class="nt">&lt;div&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;description&quot;</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>これは<span class="nt">&lt;/span&gt;&lt;ruby&gt;&lt;rb&gt;</span>Ruby<span class="nt">&lt;/rb&gt;&lt;rp&gt;</span>(<span class="nt">&lt;/rp&gt;&lt;rt&gt;</span>ルビ<span class="nt">&lt;/rt&gt;&lt;rp&gt;</span>)<span class="nt">&lt;/rp&gt;&lt;/ruby&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>表現<span class="nt">&lt;/span&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>
+
+
+<h3>木構造化</h3>
+<p>前述のXHTML表現でも既に登場していましたが、テキストを処理しやすい木構造XMLにします。</p>
+<p>Markdown:</p>
+<div class="highlight"><pre>テキストを完全な**木構造**化します。
+</pre></div>
+
+
+<p>XHTML:</p>
+<div class="highlight"><pre><span class="nt">&lt;div&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">&quot;description&quot;</span><span class="nt">&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>テキストを完全な<span class="nt">&lt;/span&gt;&lt;strong&gt;</span>木構造<span class="nt">&lt;/strong&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;text&quot;</span><span class="nt">&gt;</span>化します。<span class="nt">&lt;/span&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+</pre></div>	
+
+	</article>
+
+    <p>
+	<a href="https://twitter.com/share" class="twitter-share-button" data-via="" data-lang="en" data-size="small" data-related="">Tweet</a>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	</p>
+
+
+		  </div>	
+		  
+		  <div class="sidebar">
+		    <div class="sidebar-container" >
+
+
+  	          <nav>
+	            <h2>Categories</h2>
+	            <ul>
+	                <li class="active"><a href="https://sumi-nook.github.io/hestia/category/hep.html">HEP</a></li>
+	                <li ><a href="https://sumi-nook.github.io/hestia/category/index.html">Index</a></li>
+	            </ul>
+	          </nav>
+
+
+	        </div>
+		  </div>
+
+	  </div>
+
+      <footer>
+		<p role="contentinfo">
+		  sumi-nook - Proudly powered by <a href="http://alexis.notmyidea.org/pelican/">pelican</a>. Theme <a href="https://github.com/fle/pelican-sober">pelican-sober</a>.
+    	</p>
+
+	  </footer>	
+
+	</div>
+
+	<a href="https://github.com/sumi-nook/hestia"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+	
+	  <script>
+		var _gaq=[['_setAccount','UA-77451117-2'],['_trackPageview']];
+		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g,s)}(document,'script'));
+	  </script>
+
+</body>
+</html>
